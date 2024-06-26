@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.28)
-project(opengl_macos_project_template)
+project(opengl-macos-project-template)
 
 set(CMAKE_CXX_STANDARD 17)
 
