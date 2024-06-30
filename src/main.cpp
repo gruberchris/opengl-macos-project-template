@@ -93,7 +93,7 @@ int main() {
     glfwSetInputMode(window, GLFW_STICKY_KEYS, GL_TRUE);
 
     // Set background color
-    glClearColor(0.0f, 0.0f, 0.6f, 0.0f);
+    glClearColor(0.0f, 0.0f, 0.4f, 0.0f);
 
     Shader shader("shaders/vertex/default.glsl", "shaders/fragment/default.glsl");
 

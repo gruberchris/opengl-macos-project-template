@@ -1,6 +1,6 @@
 # OpenGL macOS Project Template
 
-This is a template project for macOS that uses OpenGL. It is a simple project that renders a triangle to the screen. The project uses CMake to build the project and uses the GLFW library to create an OpenGL context.
+This is a template project for macOS that uses OpenGL. It is a simple template with general dependencies useful for most OpenGL projects targeting Apple macOS. CMake is used to build the project and uses the GLFW library to create an OpenGL context.
 
 ## Building the Project
 
