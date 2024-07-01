@@ -10,9 +10,11 @@ include_directories(
         ${PROJECT_SOURCE_DIR}/libs
         ${PROJECT_SOURCE_DIR}/libs/glfw-3.4/include
         ${PROJECT_SOURCE_DIR}/libs/glad/include
+        ${PROJECT_SOURCE_DIR}/libs/stb/include
+        ${PROJECT_SOURCE_DIR}/libs/glm
 )
 
-add_executable(${PROJECT_NAME} ${SOURCE_FILES} ${PROJECT_SOURCE_DIR}/libs/glad/src/glad.c)
+add_executable(${PROJECT_NAME} ${SOURCE_FILES} ${PROJECT_SOURCE_DIR}/libs/glad/src/glad.c ${PROJECT_SOURCE_DIR}/libs/stb/src/stb_image.c)
 
 if(APPLE AND CMAKE_SYSTEM_PROCESSOR STREQUAL "arm64")
     set(GLFW_LIB_PATH ${PROJECT_SOURCE_DIR}/libs/glfw-3.4/lib-arm64/libglfw.3.dylib)

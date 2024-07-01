@@ -94,6 +94,8 @@ int main() {
 
     // Set background color
     glClearColor(0.0f, 0.0f, 0.4f, 0.0f);
+    // Enable depth test. This ensures that fragments are rendered based on their depth values, making sure that closer objects obscure farther objects.
+    glEnable(GL_DEPTH_TEST);
 
     Shader shader("shaders/vertex/default.glsl", "shaders/fragment/default.glsl");
 
@@ -106,7 +108,7 @@ int main() {
     while(!glfwWindowShouldClose(window)) {
         processUserInput(window, &camera);
         // Clear the screen
-        glClear( GL_COLOR_BUFFER_BIT );
+        glClear( GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
         // Use our shader
         shader.use();
